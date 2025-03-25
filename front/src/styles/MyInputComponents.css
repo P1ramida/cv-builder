@@ -1,0 +1,29 @@
+.myinput
+{
+    outline: none;
+    width: 100%;
+    border: 1px solid #dee3ee;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 5px;
+    background-color: #edf0f8;
+}
+.myinput:focus, .mytextarea:focus
+{
+    border-bottom: 3px solid rgb(204,148,172);
+    transition: 0.1s ease-in-out;
+}
+.mytextarea
+{
+    margin-top: 5px;
+    background-color: #edf0f8;
+    width: 90%;
+    resize: none;
+    padding: 5px;
+    border: 1px solid #dee3ee;
+    outline: none;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}

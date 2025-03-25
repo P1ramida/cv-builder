@@ -1,0 +1,59 @@
+
+.slick-track {
+    padding-top: 10px;
+}
+.slider_template
+{
+    width: 80%;
+    height: 500px;
+}
+.slick-slide > div 
+{
+    margin-left: 45px;
+    padding: 10px;
+    width: 420px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.516);
+    border-radius: 10px;
+    position: relative;
+}
+
+.slick-slide > div > div
+{
+    position: absolute;
+    left: 5%;
+}
+.slick-slide > div > div img
+{
+    border-radius: 10px;
+    width: 370px;
+    height: 450px;
+    cursor: pointer;
+}
+.slick-slide > div:hover > .example_template img
+{
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+    filter: brightness(0.6);
+}
+.example_template_text
+{
+    position: absolute;
+    display: none;
+    z-index: -99;
+    color: white;
+}
+.slick-slide > div:hover >.example_template >  .example_template_text{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    font-size: 20px;
+    display: flex;
+    z-index: 999;
+    mix-blend-mode: screen;
+    font-family: "Lexend", serif;
+    transition: color 0.5s ease;
+}

@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.constructor
+{
+    display: flex;
+    flex-direction: row;
+}
+.template_menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    background-color: #eff2f9;
+}
+.show_result_tempalate
+{
+    height: auto;
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #656e83;
+    align-items: center;
+}
+.stage_name
+{
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.stage_description
+{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight:normal;
+    font-size: 12px;
+    color: #a4a4a4;
+}
+.add_component_btn
+{
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+}
+.add_component_btn:hover,.logout_btn:hover
+{
+    background-color:  rgb(236, 200, 216);
+    color: white;
+}
+.start_info
+{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.proffesional_summary
+{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.proffesional_summary .mytextarea
+{
+    margin-left: 10px;
+}
+.employment_history
+{
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.component_item_menu
+{
+    margin-top: 10px;
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid #dee3ee;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    transition: 0.1s ease-in-out;
+}
+.component_open
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+}
+.delete_empl_btn
+{
+    position: absolute;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.open_empl_btn
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    right: 10px;
+}
+.component_specified_title
+{
+    font-family: "Poppins", sans-serif;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.employment_history >  .input_area
+{
+    height: 35%;
+}
+.input_area
+{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.input_with_label
+{
+    margin: 10px 10px;
+    height: 70px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.input_with_label label
+{
+    font-family: "Poppins", sans-serif;
+    font-weight:normal;
+}
+
+.start_end_date
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.start_end_date input
+{
+    width: 49%;
+}
+
+.component_items
+{
+    margin-top: 10px;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skill_component
+{
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #dee3ee;
+    overflow: hidden;
+}
+.skill_levels
+{
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    width: 100%;
+    background-color: #edf0f8;
+    height: 40px;
+    border-radius: 5px;
+}
+.skill_level
+{
+    width: 25%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.skill_level:hover
+{
+    background-color: #cacacb;
+}
+.skill_level.active:nth-child(1), .skill_component.active
+{
+    background-color:#fe7d8b;
+}
+.skill_level.active:nth-child(2), .skill_component.active
+{
+    background-color:#f68559;
+}
+.skill_level.active:nth-child(3)
+{
+    background-color:#ec930c;
+}
+.skill_level.active:nth-child(4)
+{
+    background-color:#48ba75;
+}
+.skill_level.active:nth-child(5)
+{
+    background-color:#9aaae8;
+}
+.skill_component .input_area
+{
+    height: 100px;
+}
+
+.education
+{
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.required_inputs
+{
+    color: red;
+}
+.logout_btn
+{
+    width: 50%;
+    margin-bottom: 10px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}

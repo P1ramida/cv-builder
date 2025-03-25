@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.first_template
+{
+    margin: 50px auto;
+    width: 90%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.first_template:hover .change_template
+{
+    visibility: visible;
+    left: 0%;
+}
+.first_template:hover .download_template
+{
+    visibility: visible;
+    right: 0%;
+}
+.change_template
+{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    left: -50%;
+    top: 25%;
+    height: 50%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.327);
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+.download_template
+{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: -50%;
+    height: 50%;
+    top: 25%;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.327);
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    z-index: 999;
+}
+.avatar_and_name
+{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-direction: row;
+}
+.avatar_wrapp
+{
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+}
+.avatar_and_name img
+{
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+.user_name_text_wrapper
+{
+    min-width:70%;
+    max-width: 70%;
+    height: 100px;
+    margin-left: 10px;
+    word-break:normal;
+    word-wrap: break-word;
+}
+.user_name
+{
+    font-family: "Kulim Park", sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-wrap: wrap;
+    word-break:normal;
+    word-wrap: break-word;
+}
+
+.summary_info
+{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    max-height: 180px;
+    position: relative; 
+    max-width: 50%;
+    word-break:normal;
+    word-wrap: break-word;
+}
+.summary
+{
+    max-width: 90%;
+    margin: 5px 10px;
+    height: auto;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEEED;
+    border-radius: 5px;
+    position: relative;
+}
+.details
+{
+    color: #575656;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 15px;
+    margin-left: 25px;
+    
+}
+.details_item
+{
+    margin-top: 2px;
+}
+.data_name
+{
+    font-family: "Kulim Park", sans-serif;
+    font-size: 25px;
+    margin:5px 5px;
+    font-weight: bold;
+    color: black;
+}
+.summary_text
+{
+    width: 100%;
+    max-height: 100%;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
+    padding: 5px;
+    word-break:normal;
+    word-wrap: break-word;
+}
+.employment_history_data
+{
+    margin: 5px 10px;   
+    width: 50%;
+    height: 100%;
+}
+.employment_item
+{
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 10px 5px;
+}
+.employment_item_name, .empl_education_name
+{
+    font-family: "Kulim Park", sans-serif;
+    padding: 1px;
+    max-width: fit-content;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+.employment_item_employer
+{
+    font-family: "Kulim Park", sans-serif;
+    font-weight: bold;
+    color: #575656;
+}
+.employment_item_times, .empl_education_times
+{
+    font-family: "Kulim Park", sans-serif;
+    font-weight:600;
+    font-size: 12px;
+}
+.employment_item_description
+{
+    font-family: "Kulim Park", sans-serif;
+    background-color: #EDEEED;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    word-break:normal;
+    word-wrap: break-word;
+}
+
+.empl_skills
+{
+    background-color: #EDEEED;
+    border-radius: 5px;
+    width: 240px;
+    right: 10px;
+    top: 125px;
+    position: absolute;
+    height: auto;
+    padding-bottom: 5px;
+    min-height: 140px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.empl_skills_items_wrapper
+{
+    width: 95%;
+    height: 100%;
+    
+}
+.empl_skills_item
+{
+    display: flex;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: bold;
+    text-wrap: nowrap;
+}
+.empl_skills_key
+{
+    flex-grow: 1;
+    width: 90%;
+    display: flex;
+    align-items: baseline;
+}
+.empl_skills_key::after
+{
+    content: "";
+    width: 100%;
+    margin-inline: 0.3em;
+    border-bottom: 3px dotted;
+}
+.empl_education
+{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    top:275px;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+}
+.empl_education_item
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px;
+}
+.empl_education_text
+{
+    background-color: #EDEEED;
+    font-family: "Kulim Park", sans-serif;
+    font-weight: lighter;
+    border-radius: 5px;
+    width: 99%;
+    height: 100px;
+    word-break:normal;
+    word-wrap: break-word;
+}
