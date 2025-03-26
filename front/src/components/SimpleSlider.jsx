@@ -35,7 +35,7 @@ const SimpleSlider = () =>{
                 onClick={()=> setChoosenTemplate(2)}
                 >
                     <span className="example_template_text">Use this template</span>
-                    <img src="/images/example2.png" alt=""/>
+                    <img src="/images/example4.png" alt=""/>
                 </div>
             </Slider>
         </>
